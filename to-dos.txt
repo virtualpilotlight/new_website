@@ -1,0 +1,50 @@
+to-do for HTML, CSS, JS
+
+RESUME HTML
+add download button for pdf, add resume.pdf to the file directory
+edit work history more, in preogress the <ul>. it looks fine. 
+update skills to have more audio stuff and like more other skils in general
+fix icon for IG in index.html footer, idk where the other icons are comging from, perhaps font awesome and bootstrap need to be updated
+Nav bar 
+
+
+OTHER PAGES
+home 
+resume
+fan page
+about
+projects
+fix the t.A.T.u. tribute page from codepen.io
+	add photos of t.A.T.u. jacket
+
+CSS 
+fix the fan page
+
+
+BOOTSTRAP
+
+
+CONSIDER:
+more (google) fonts
+education logos
+
+
+Done:
+HTML
+add google fonts > https://fonts.google.com/
+removed unused images (all)
+was able to HTTP clone into new floder so, other unsed html files and imgaes removed.
+favicon, could it be a logo
+edit about section
+swap awards section for voluenteer work
+add virtual pilot light logo
+CSS
+backgroud?
+.header make the edge rounded
+rounded border for logo
+OTHER PAGES
+home page made with nav bar in process.
+
+
+Todo for other launch needs
+virtual pilot light e-mail admi@virtualpilotlight.com
