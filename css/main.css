@@ -33,7 +33,7 @@ p {
 
 /* Links */
 a {
-  color: lime;
+  color: lavender;
   word-wrap: break-word;
 
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -45,7 +45,7 @@ a {
 
 a:hover,
 a:focus {
-  color: lavender;    /* gray, consider a different gray? */ 
+  color: lime;    /* gray, consider a different gray? */ 
   text-decoration: none;
   outline: 0;
 }
@@ -92,6 +92,10 @@ a:after {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.headerBackgroungImg {
+  background: url(../images/VPL_log_large.jpg) no-repeat center top; /* changed header image */
 }
 
 .header h1 {
@@ -310,3 +314,4 @@ body {
   -o-animation-name: fadeInUp;
   animation-name: fadeInUp;
   }
+

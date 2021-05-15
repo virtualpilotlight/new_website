@@ -1,27 +1,29 @@
 to-do for HTML, CSS, JS
 
-RESUME HTML
-add download button for pdf, add resume.pdf to the file directory
-edit work history more, in preogress the <ul>. it looks fine. 
-update skills to have more audio stuff and like more other skils in general
-fix icon for IG in index.html footer, idk where the other icons are comging from, perhaps font awesome and bootstrap need to be updated
-Nav bar 
+HTML
+template page need to get set so I can stuff the other pages in. 
 
-
-OTHER PAGES
-home 
-resume
-fan page
-about
-projects
-fix the t.A.T.u. tribute page from codepen.io
-	add photos of t.A.T.u. jacket
 
 CSS 
 fix the fan page
 
 
 BOOTSTRAP
+What is it that you do here?
+
+
+RESUME 
+add download button for pdf, add a resume file to the file directory, update the resume.pdf
+review work history
+check the voluenteer section 
+update skills to have more sections for other niche skills
+
+
+OTHER PAGES
+about
+projects
+fix the t.A.T.u. tribute page from codepen.io
+	add photos of t.A.T.u. jacket
 
 
 CONSIDER:
@@ -38,12 +40,17 @@ favicon, could it be a logo
 edit about section
 swap awards section for voluenteer work
 add virtual pilot light logo
+bootstrap and font awesome added and working
+nav bar
+fix icon for IG in index.html footer
 CSS
 backgroud?
 .header make the edge rounded
 rounded border for logo
 OTHER PAGES
 home page made with nav bar in process.
+resume
+fan page
 
 
 Todo for other launch needs

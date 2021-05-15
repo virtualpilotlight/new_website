@@ -48,3 +48,7 @@ p {
 -ms-transform: scale(-1, 1);
 transform: scale(-1, 1);
 }
+
+.fanBackground {
+  background: url(...images/fan_page/stucco_texture2059.jpg);
+}
