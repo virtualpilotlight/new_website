@@ -310,3 +310,8 @@ body {
   -o-animation-name: fadeInUp;
   animation-name: fadeInUp;
   }
+
+/* test */
+.fanBackground {
+  background: url(...images/fan_page/stucco_texture2059.jpg);
+}
