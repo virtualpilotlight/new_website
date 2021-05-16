@@ -1,0 +1,10 @@
+Host	Record	Required Data	Current Data
+w3tsm3prn49tdrk32czl	CNAME	verify.squarespace.com	Correct
+www	CNAME	ext-cust.squarespace.com	Correct
+@	A	198.49.23.145	Correct
+@	A	198.185.159.145	Correct
+@	A	198.49.23.144	Correct
+@	A	198.185.159.144	Correct
+
+
+DNS table from squarespace incase it is needed. disconnedteted on 05/15/2021 6:30pm 
