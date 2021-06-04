@@ -14,8 +14,9 @@ repo [knommon/resume] (https://github.com/knommon/resume)
 * css
 * javascrip
 * edited in sublime text
-
-
+* ubuntu server
+* apache
+* virtualbox 
 
 ## to-dos
 
@@ -28,6 +29,8 @@ repo [knommon/resume] (https://github.com/knommon/resume)
 ### BOOTSTRAP
 * What is it that you do here?
 
+### FONTAWESOME
+* needs streamlined implimentation
 
 #### RESUME 
 * add download button for pdf, add a resume file to the file directory, update the resume.pdf
@@ -42,11 +45,9 @@ repo [knommon/resume] (https://github.com/knommon/resume)
 * youtube video, y u so big? conside a galary?
 * add photos of t.A.T.u. jacket
 
-
 ### OTHER PAGES
 * about
 * projects
-
 
 ### CONSIDER:
 * more (google) fonts
@@ -57,7 +58,9 @@ repo [knommon/resume] (https://github.com/knommon/resume)
 ### email
 * virtual pilot light e-mail admi@virtualpilotlight.com
 
-
+### other
+DNS
+google domains
 
 ##### Done:
 HTML
