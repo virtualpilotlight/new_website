@@ -5,7 +5,7 @@ new website repo, with pages.
 ### Resume page based on
 
 [this tutorial](https://medium.com/p/991845147ec)
-repo [knommon/resume] (https://github.com/knommon/resume)
+repo [knommon/resume](https://github.com/knommon/resume)
 ****
 * bootsrtap
 * font awesome
@@ -18,6 +18,12 @@ repo [knommon/resume] (https://github.com/knommon/resume)
 * apache
 * virtualbox 
 
+=======
+
+home.html is good, resume.html needs some style adjustment, projects.html created. 
+
+=======
+
 ## to-dos
 
 ### HTML
@@ -27,7 +33,8 @@ repo [knommon/resume] (https://github.com/knommon/resume)
 * fix the fan page
 
 ### BOOTSTRAP
-* What is it that you do here?
+* ~What is it that you do here?~
+* looks good, there were some style comflicts, fixing now
 
 ### FONTAWESOME
 * needs streamlined implimentation
