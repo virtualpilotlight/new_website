@@ -1,40 +1,33 @@
+<!-- Resume page -->
 <!DOCTYPE html>
 <html lang="en"> <!-- page is in english -->
   <head> <!-- head contains metadata -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	
+    <meta charset="utf-8"> <!--uses UTF-8 encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	 <!-- scaling -->
     <!-- description -->
-    <meta name="description" content="resume page for Omega X Rae">
+    <meta name="description" content="Virtual Pilot Light">
     <!-- author -->
     <meta name="author" content="Omega X Rae">
-    <link rel="shortcut icon" href="favicon.ico"> <!-- FIX ME downloaded in pages folder insure link is made  -->
+    <!-- icons -->
+    <link rel="shortcut icon" href="favicon.ico"> 
     <link rel="apple-touch-icon" href="icon.png" />
-
-		<!-- EDIT: title -->
+		<!-- title -->
     <title>Virtual Pilot Light</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- bootstrap using jsDelivr -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
 
     <!-- Link the main.css stylesheet -->
     <link href="css/main.css" rel="stylesheet">
     
-    <!-- OPTIONAL: Google Fonts (don't forget to edit main.css also) -->
-
+    <!--FIX ME google fonts, check what is going to be used and update -->
     <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Itim&family=Josefin+Sans:wght@100&family=Press+Start+2P&family=Quantico&family=Russo+One&family=Source+Code+Pro:wght@200&family=Special+Elite&display=swap" rel="stylesheet">
-	<style>
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Itim&family=Josefin+Sans:wght@100&family=Press+Start+2P&family=Quantico&family=Russo+One&family=Source+Code+Pro:wght@200&family=Special+Elite&display=swap');
-</style>
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Itim&family=Josefin+Sans:wght@100&family=Press+Start+2P&family=Quantico&family=Russo+One&family=Source+Code+Pro:wght@200&family=Special+Elite&display=swap" rel="stylesheet">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Itim&family=Josefin+Sans:wght@100&family=Press+Start+2P&family=Quantico&family=Russo+One&family=Source+Code+Pro:wght@200&family=Special+Elite&display=swap');</style>
   </head>
 
   <body> <!-- content of website -->
@@ -57,30 +50,30 @@
 		</div><!--/.container -->
 	</div><!--/.header -->
 	
-	<nav>
-                <div class="container desc">
-                        <div class="row">
-                                        <!--FIX ME these links also the style is bad -->
-                                        <div class="col-lg-2 col-lg-offset-1">
-                                                <h5><a href="/index.html">HOME</a></h5>
-                                        </div>
-                                        <div class="col-lg-2 col-lg-offset-1">
-                                                <h5><a href="/resume.html">RESUME</a></h5>
-                                        </div>
-                                        <div class="col-lg-2 col-lg-offset-1">
-                                                <h5><a href="/project.html">PROJECTS</a></h5>
-                                        </div>
-                                        <div class="col-lg-2 col-lg-offset-1">
-                                                <h5><a href="fan_page.html">FAN PAGE</a></h5>
-                                        </div>
-                                        <div class="col-lg-2 col-lg-offset-1">
-                                                <h5><a href="/about.html">ABOUT</a></h5>
-                                        </div>
-                        </div><!--/.row -->
-                        <br>
-                        <hr>
-                </div><!--/.container -->
-        </nav> 	
+	<nav class="centered">
+		<div class="container desc">
+			<div class="row">
+					<!--FIX ME these links also the style is bad -->
+					<div class="col-lg-2 col-lg-offset-1">
+						<h5><a href="/home.html">HOME</a></h5>
+					</div>
+					<div class="col-lg-2 col-lg-offset-1">
+						<h5><a href="/resume.html">RESUME</a></h5>
+					</div>
+					<div class="col-lg-2 col-lg-offset-1">
+						<h5><a href="/projects.html">PROJECTS</a></h5>
+					</div>
+					<div class="col-lg-2 col-lg-offset-1">
+						<h5><a href="/fan_page.html">FAN PAGE</a></h5>
+					</div>
+					<div class="col-lg-2 col-lg-offset-1">
+						<h5><a href="/about.html">ABOUT</a></h5>
+					</div>				
+			</div><!--/.row -->
+			<br>
+			<hr>
+		</div><!--/.container -->
+	</nav> 	
 
 	<section id="about" name="about"></section>
 	<div class="about">
@@ -112,6 +105,7 @@
 
 				<div class="col-lg-2 col-lg-offset-1">
 					<h5>WORK</h5>
+					
 				</div>
 				
 				<!-- EDIT: work line 1 -->

@@ -13,6 +13,7 @@ repo [knommon/resume](https://github.com/knommon/resume)
 * html
 * css
 * javascrip
+* jsDEliver
 * edited in sublime text
 * ubuntu server
 * apache
