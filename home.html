@@ -28,6 +28,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Itim&family=Josefin+Sans:wght@100&family=Press+Start+2P&family=Quantico&family=Russo+One&family=Source+Code+Pro:wght@200&family=Special+Elite&display=swap" rel="stylesheet">
 	  <style>@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Itim&family=Josefin+Sans:wght@100&family=Press+Start+2P&family=Quantico&family=Russo+One&family=Source+Code+Pro:wght@200&family=Special+Elite&display=swap');</style>
+  	<!-- guestbook -->
+  	<script type="text/javascript">// <![CDATA[
+			function Validate()
+			{
+			var x=document.forms["guest"]["email"].value;
+			var y=document.forms["guest"]["name"].value;
+			if(y==null || y=="")
+			{
+			alert("Please enter your Name! ");
+			return false;
+			}
+			if(x==null || x=="")
+			{
+			alert("Please enter your email address!");
+			return false;
+			}
+			var atpos=x.indexOf("@");
+			var dotpos=x.lastIndexOf(".");
+			if (atpos<1 || dotpos<atpos+2 ||="" dotpos+2="">=x.length)
+			{
+			alert("Not a valid e-mail address");
+			return false;
+			}
+			else
+			return true;
+			}
+			</atpos+2>
+			// ]]>				
+		</script>
   </head>
 
   <body> <!-- content of website -->
@@ -112,6 +141,19 @@
 					</p>
 				</div>
 			</div><!--/.row -->
+			<!-- guest book -->
+			<div class="row">
+				<form action="addcomment.php" method="post" name="guest" onsubmit="return Validate();">Name:    <input type="text" name="name" />
+
+					Email: <input type="text" name="email" />
+
+					Message:
+
+ 					<textarea cols="50" name="message" rows="10"> </textarea>
+
+					<input type="submit" value="Sign this in the Book" />
+				</form>
+			</div>
 		</div><!--/.container -->
 	</div><!--/ #footer -->
   </body>
