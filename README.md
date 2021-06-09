@@ -45,7 +45,7 @@ home.html is good, resume.html needs some style adjustment, projects.html create
 #### HOME
 * guest book added, needs stylization
 * consider making changing the header script to make sure an email hasn't been imput
-* mailing list?
+* mailing list? 
 
 #### RESUME 
 * add download button for pdf, add a resume file to the file directory, update the resume.pdf
