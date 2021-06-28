@@ -7,13 +7,16 @@ new website repo, with pages.
 [this tutorial](https://medium.com/p/991845147ec)
 repo [knommon/resume](https://github.com/knommon/resume)
 [this tutorial](https://www.slashcoding.com/create-a-simple-guestbook-using-php/)
+
 ****
+
 * bootsrtap
 * font awesome
 * google fonts
 * html
 * css
 * PHP
+* postgresql
 * javascrip
 * jsDEliver
 * edited in sublime text
@@ -23,6 +26,9 @@ repo [knommon/resume](https://github.com/knommon/resume)
 
 =======
 
+## NOTES
+
+Issues implimenting fan_site page, CSS conflicts unable to use background or the backgroud-image property multiple time. I think it is applied to the body element when it needs to be seperate for the header. I made an under construction page, since home page now has the unstyled PHP guest book. I think I removed the template page, though it would be a good to have an example page that shows the different custtome CSS that I have made so far.  I think I need to do some commenting and like refomatting. 
 home.html is good, resume.html needs some style adjustment, projects.html created. 
 
 =======
@@ -30,7 +36,7 @@ home.html is good, resume.html needs some style adjustment, projects.html create
 ## to-dos
 
 ### HTML
-* template page needs to get set so I can stuff the other pages in. 
+*  
 
 ### CSS 
 * fix the fan page
@@ -92,7 +98,8 @@ swap awards section for voluenteer work
 add virtual pilot light logo
 bootstrap and font awesome added and working
 nav bar
-fix icon for IG in index.html footer~~
+fix icon for IG in index.html footer
+template page needs to get set so I can stuff the other pages in.~~
 * CSS
 ~~backgroud?
 .header make the edge rounded
