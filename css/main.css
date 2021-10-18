@@ -119,8 +119,12 @@ a:after {
   color: silver;
 } 
 
-.about h5, p {
+.about p {
   color: silver;
+}
+
+h5 {
+  color:  lavender;
 }
 
 .about i {
