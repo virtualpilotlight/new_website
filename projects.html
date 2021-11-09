@@ -8,18 +8,12 @@
     <meta name="description" content="Virtual Pilot Light">
     <!-- author -->
     <meta name="author" content="Omega X Rae">
-    <!-- icons -->
-    <link rel="shortcut icon" href="favicon.ico"> 
-    <link rel="apple-touch-icon" href="icon.png" />
 		<!-- title -->
     <title>Virtual Pilot Light</title>
 
     <!-- bootstrap using jsDelivr -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    
-    <!-- font awesome  -->
-    <script src="https://kit.fontawesome.com/8a6418071d.js" crossorigin="anonymous"></script>
-    
+
     <!-- Link the main.css stylesheet -->
     <link href="css/main.css" rel="stylesheet">
     
@@ -77,7 +71,37 @@
 	<div class="container">
 		<div class="row">
 			<div>
-				<h1>Under construction</h1>
+				<h1>How To Put Your Own Site Online.</h1>
+			</div>
+			<div>
+				<p>Buy a domain, I got mine from google domains, they're pretty low cost, particularly for something unique. </p>
+				<p>pick how you want to server it, AWS is really low cost and easy to use.
+AWS lightsail setup:</p>
+				<p>Spin up an instance pick your OS, I'm using ubuntu 20.04. Go to the networking tab on the console and give it a static IP, you can have up to 5 static public IPs for free. You'll need a public IP to serve your content to the web. Set network rules, make sure ports 22 for SSH, 80 for HTTP and 443 for HTTPS, are open to both IPv4 and IPv6. SSH in, you can use their browser option or follow the instruction to use PUTTY or another SSH client.</p>
+				<p>run the commands: </p>
+					<ul>
+						<li>sudo apt-get update</li>
+						<li>sudo apt-get upgrade</li>
+						<li>sudo ufw status</li>
+						<li>sudo ufw allow 22/tcp</li> 
+						<li>sudo ufw allow 80/tcp</li>
+						<li>sudo ufw allow 443/tcp</li>
+						<li>sudo ufw enable</li>
+						<li>sudo apt-get install nginx</li>
+						<li>sudo systemctl start nginx</li>
+						<li>cd /var/www</li>
+						<li>sudo git clone your_repo</li>
+						<li>cd /your_repo</li>
+						<li>sudo mv my_config_file /etc/nginx/sites-available</li>
+						<li>cd /etc/nginx/sites-available</li>
+						<li>sudo ln -s my_config_file /etc/nginx/sites-enabled</li>
+						<li>sudo systemctl reload nginx</li>
+					</ul>
+				<p>update the google domain with the static public IP
+wait for your site to go live.</p>
+				<p></p>get HTTPS with <a href="https://certbot.eff.org/lets-encrypt/ubuntufocal-nginx" target="_blank"> certbot.</a>
+
+				</p>
 			</div>
 			
 		</div>
@@ -104,12 +128,14 @@
 				</div>
 				<div class="col-lg-3">
 					<p><sm>SOCIAL LINKS</sm></p>
-										<p>
-											<a href="https://www.facebook.com/virtualpilotlight" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-											<a href="https://www.linkedin.com/in/omega-rae/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-											<a href="https://github.com/virtualpilotlight" target="_blank"><i class="fa-brands fa-github"></i></a>
-											 <a href="https://www.instagram.com/virtualpilotlight/"><i class="fa-brands fa-instagram"></i></a>
-										</p>
+
+					<p>
+						<a href="https://www.facebook.com/virtualpilotlight" target="_blank"><h1>F</h1></a>
+						<a href="https://www.linkedin.com/in/omega-rae/" target="_blank"> <h1>L</h1> </a>
+						<a href="https://github.com/virtualpilotlight" target="_blank"> <h1>G</h1> </a>
+						 <a href="https://www.instagram.com/virtualpilotlight/"> <h1>I</h1></a>
+					</p>
+
 				</div>
 			</div><!--/.row -->
 		</div><!--/.container -->
