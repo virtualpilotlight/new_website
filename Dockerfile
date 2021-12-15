@@ -16,4 +16,4 @@ RUN sudo apt-get update &&\
 	cd /etc/nginx/sites-available &&\
 	sudo ln -s virtualpilotlight /etc/nginx/sites-enabled &&\
 	sudo systemctl reload nginx &&\
-EXPOSE 80
+EXPOSE 80 22 53 443
