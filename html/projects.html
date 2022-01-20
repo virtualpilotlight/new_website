@@ -1,0 +1,171 @@
+<!-- PROJECTS PAGE -->
+<!DOCTYPE html> 
+<html lang="en"> <!-- page is in english -->
+  <head> <!-- head contains metadata -->
+    <meta charset="utf-8"> <!--uses UTF-8 encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	 <!-- scaling -->
+    <!-- description -->
+    <meta name="description" content="Virtual Pilot Light">
+    <!-- author -->
+    <meta name="author" content="Omega X Rae">
+		<!-- title -->
+    <title>Virtual Pilot Light</title>
+
+    <!-- bootstrap using jsDelivr -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Link the main.css stylesheet -->
+    <link href="css/main.css" rel="stylesheet">
+    
+    <!--FIX ME google fonts, check what is going to be used and update -->
+
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Itim&family=Josefin+Sans:wght@100&family=Press+Start+2P&family=Quantico&family=Russo+One&family=Source+Code+Pro:wght@200&family=Special+Elite&display=swap" rel="stylesheet">
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Itim&family=Josefin+Sans:wght@100&family=Press+Start+2P&family=Quantico&family=Russo+One&family=Source+Code+Pro:wght@200&family=Special+Elite&display=swap');
+</style>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body> <!-- content of website -->
+	<div id="header" class="header">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-12">
+					<!-- name -->
+					<h1>Virtual Pilot Light</h1>
+				</div><!--/.col-lg-12 -->
+			</div><!--/.row -->
+		</div><!--/.container -->
+	</div><!--/.header -->
+	
+	<nav class="centered">
+		<div class="container desc">
+			<div class="row">
+					<!--FIX ME these links also the style is bad -->
+					<div class="col-lg-2 col-lg-offset-1">
+						<h5><a href="/index.html">HOME</a></h5>
+					</div>
+					<div class="col-lg-2 col-lg-offset-1">
+						<h5><a href="/resume.html">RESUME</a></h5>
+					</div>
+					<div class="col-lg-2 col-lg-offset-1">
+						<h5><a href="/projects.html">PROJECTS</a></h5>
+					</div>
+					<div class="col-lg-2 col-lg-offset-1">
+						<h5><a href="/about.html">ABOUT</a></h5>
+					</div>				
+			</div><!--/.row -->
+			<br>
+			<hr>
+		</div><!--/.container -->
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div>
+				<h1>How To Put Your Own Site Online.</h1>
+			</div>
+			<div>
+				<p>Buy a domain, I got mine from google domains, they're pretty low cost, particularly for something unique. </p>
+				<p>Write your code. Make a git repo. Add all the HTML, CSS, JavaScript, PHP or images anything else you want to put on your webpage into your git repo. </p>
+				<p>Pick how you want to serve it, you may be able to serve it from home if your web provider allows for public IP use on a home router. Make sure you have the ports open on your local network topology. Alternatively AWS Lightsail is really low cost and easy to use.</p>
+				<p>Spin up an instance pick your OS, I'm using ubuntu 20.04. Go to the networking tab on the console and give it a static IP, you can have up to 5 static public IPs for free. You'll need a public IP to serve your content to the web. Set network rules, make sure ports 22 for SSH, 80 for HTTP and 443 for HTTPS, are open to both IPv4 and IPv6. SSH in, you can use their browser option or follow the instruction to use PUTTY or another SSH client.</p>
+				<h2>AWS lightsail setup:</h2>
+				<p>Spin up an instance pick your OS, I'm using ubuntu 20.04. Go to the networking tab on the console and give it a static IP, you can have up to 5 static public IPs for free, pretty cool! 
+Set network rules. This is only for serving a static site; if you are using any APIs or doing any file transferring on the same server you may have other ports you need to open.</p> 
+				<h3>For both IPv4 and IPv6 open ports:</h3> 
+				<ul>
+					<li>22 for SSH on TCP & UDP</il>
+					<li>53 for DNS on TCP & UDP</li>
+					<li>80 for HTTP on TCP & UDP</li>
+					<li>443 for HTTPS on TCP & UDP</li>
+				</ul>
+				<h3>SSH in:</h3>
+				<p>Go to the AWS lightsail accounts page and then go to the SSH key tab.</p>
+				<p>Save the default key to Downloads.</p>
+				<p>Open terminal and input the following commands: </p>
+				<ul>
+					<li>cd Downloads</li>
+					<li>sudo chmod 600 defaultKey.pem </li>
+					<li> ls -l </ls>
+				</ul>
+				<p>The output will be:</p>
+				<ul>
+					<li>-rw------- for your .pem file </li>
+				</ul>
+				<p>Run the command: </p>
+				<ul>
+					<li>ssh -i ./defaultKey.pem ubuntu@yourIP</il>
+				</ul>	
+				<p>run the commands: </p>
+				<ul>
+					<li>sudo apt-get update</li>
+					<li>sudo apt-get upgrade</li>
+					<li>sudo ufw status</li>
+					<li>sudo ufw allow 22</li>
+					<li>sudo ufw allow 53</li> 
+					<li>sudo ufw allow 80</li>
+					<li>sudo ufw allow 443</li>
+					<li>sudo ufw enable</li>
+					<li>sudo apt-get install nginx</li>
+					<li>sudo systemctl start nginx</li>
+					<li>cd /var/www</li>						
+					<li>sudo git clone your_repo</li>
+					<li>cd /your_repo</li>					<li>sudo mv my_config_file /etc/nginx/sites-available</li>
+					<li>cd /etc/nginx/sites-available</li>
+					<li>sudo ln -s my_config_file /etc/nginx/sites-enabled</li>
+					<li>sudo systemctl reload nginx</li>
+				</ul>
+				<p>update the google domain with the static public IP
+wait for your site to go live.</p>
+				<p>get HTTPS with <a href="https://certbot.eff.org/lets-encrypt/ubuntufocal-nginx" target="_blank"> certbot.</a>
+
+				</p>
+			</div>
+			
+		</div>
+	</div>
+
+	<section id="contact" name="contact"></section>
+	<!--FOOTER DESCRIPTION -->
+	<div id="footwrap" class="footer">
+		<div class="container">
+			<div class="row">
+			
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>CONTACT</h5>
+				</div>
+				<!-- email -->
+				<div class="col-lg-6">
+					<p><t>Email</t><br/>
+						<a href="mailto:omega.x.rae@gmail.com" target="_blank" class="mail">omega.x.rae@gmail.com</a> <br/>
+					</p>
+					<!--  address -->
+					<p><t>Location </t><br/>
+						Oakland, California <br/>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>SOCIAL LINKS</sm></p>
+
+					<p>
+						<a href="https://www.facebook.com/virtualpilotlight" target="_blank"><h1>F</h1></a>
+						<a href="https://www.linkedin.com/in/omega-rae/" target="_blank"> <h1>L</h1> </a>
+						<a href="https://github.com/virtualpilotlight" target="_blank"> <h1>G</h1> </a>
+						 <a href="https://www.instagram.com/virtualpilotlight/"> <h1>I</h1></a>
+					</p>
+
+				</div>
+			</div><!--/.row -->
+		</div><!--/.container -->
+	</div><!--/ #footer -->
+  </body>
+</html>
