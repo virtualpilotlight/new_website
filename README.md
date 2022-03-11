@@ -4,14 +4,14 @@ new website repo, with pages.
 
 ****
 
-* bootsrtap
+* bootstrap
 * font awesome
 * google fonts
 * HTML
 * CSS
 * PHP
-* javascrip
-* jsDEliver
+* javascript
+* jsDElivr
 * edited in sublime text
 
 
@@ -19,7 +19,7 @@ new website repo, with pages.
 
 ## NOTES
 
- HOW TO PUT UP YOUR OWN WEBSITE ADDED TO PROJECTS PAGE.
+HOW TO PUT UP YOUR OWN WEBSITE ADDED TO PROJECTS PAGE.
 
 
  
