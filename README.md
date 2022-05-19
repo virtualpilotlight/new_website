@@ -11,7 +11,7 @@ new website repo, with pages.
 * CSS
 * PHP
 * javascript
-* jsDElivr
+* jsDelivr
 * edited in sublime text
 
 
@@ -21,7 +21,8 @@ new website repo, with pages.
 
 HOW TO PUT UP YOUR OWN WEBSITE ADDED TO PROJECTS PAGE.
 
-
+There are 2 configuration files, one for apache2 and one for nginx. virtualpilotlight.conf is for apache2
+the file virtualpilotlightNginx is a config file for nginx.
  
 
 =========
