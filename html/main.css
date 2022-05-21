@@ -75,7 +75,7 @@ a:after {
 /* Header Wrap */
 .header {
   background: #111111;
-  background: url(../images/VPL_log_large.jpg) no-repeat center top; /* changed header image */
+  background: url("/VPL_logo_large.jpg") no-repeat center top; /* changed header image */
   padding-top:140px;
   text-align:center;
   background-attachment: relative;
