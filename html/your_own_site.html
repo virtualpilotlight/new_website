@@ -1,4 +1,4 @@
-<!-- ABOUT PAGE -->
+<!-- PROJECTS PAGE -->
 <!DOCTYPE html> 
 <html lang="en"> <!-- page is in english -->
   <head> <!-- head contains metadata -->
@@ -8,7 +8,6 @@
     <meta name="description" content="Virtual Pilot Light">
     <!-- author -->
     <meta name="author" content="Omega X Rae">
-    
 		<!-- title -->
     <title>Virtual Pilot Light</title>
 
@@ -72,7 +71,64 @@
 	<div class="container">
 		<div class="row">
 			<div>
-				<h1><a href="your_own_site.html">How To Put Your Own Site Online.</a></h1> 
+				<h1>How To Put Your Own Site Online.</h1>
+			</div>
+			<div>
+				<p>Buy a domain, I got mine from google domains, they're pretty low cost, particularly for something unique. </p>
+				<p>Write your code. Make a git repo. Add all the HTML, CSS, JavaScript, PHP or images anything else you want to put on your webpage into your git repo. </p>
+				<p>Pick how you want to serve it, you may be able to serve it from home if your web provider allows for public IP use on a home router. Make sure you have the ports open on your local network topology. Alternatively AWS Lightsail is really low cost and easy to use.</p>
+				<p>Spin up an instance pick your OS, I'm using ubuntu 20.04. Go to the networking tab on the console and give it a static IP, you can have up to 5 static public IPs for free. You'll need a public IP to serve your content to the web. Set network rules, make sure ports 22 for SSH, 80 for HTTP and 443 for HTTPS, are open to both IPv4 and IPv6. SSH in, you can use their browser option or follow the instruction to use PUTTY or another SSH client.</p>
+				<h2>AWS lightsail setup:</h2>
+				<p>Spin up an instance pick your OS, I'm using ubuntu 20.04. Go to the networking tab on the console and give it a static IP, you can have up to 5 static public IPs for free, pretty cool! 
+Set network rules. This is only for serving a static site; if you are using any APIs or doing any file transferring on the same server you may have other ports you need to open.</p> 
+				<h3>For both IPv4 and IPv6 open ports:</h3> 
+				<ul>
+					<li>22 for SSH on TCP & UDP</il>
+					<li>53 for DNS on TCP & UDP</li>
+					<li>80 for HTTP on TCP & UDP</li>
+					<li>443 for HTTPS on TCP & UDP</li>
+				</ul>
+				<h3>SSH in:</h3>
+				<p>Go to the AWS lightsail accounts page and then go to the SSH key tab.</p>
+				<p>Save the default key to Downloads.</p>
+				<p>Open terminal and input the following commands: </p>
+				<ul>
+					<li>cd Downloads</li>
+					<li>sudo chmod 600 defaultKey.pem </li>
+					<li> ls -l </ls>
+				</ul>
+				<p>The output will be:</p>
+				<ul>
+					<li>-rw------- for your .pem file </li>
+				</ul>
+				<p>Run the command: </p>
+				<ul>
+					<li>ssh -i ./defaultKey.pem ubuntu@yourIP</il>
+				</ul>	cd new
+				<p>run the commands: </p>
+				<ul>
+					<li>sudo apt-get update</li>
+					<li>sudo apt-get upgrade</li>
+					<li>sudo ufw status</li>
+					<li>sudo ufw allow 22</li>
+					<li>sudo ufw allow 53</li> 
+					<li>sudo ufw allow 80</li>
+					<li>sudo ufw allow 443</li>
+					<li>sudo ufw enable</li>
+					<li>sudo apt-get install nginx</li>
+					<li>sudo systemctl start nginx</li>
+					<li>cd /var/www</li>						
+					<li>sudo git clone your_repo</li>
+					<li>cd /your_repo</li>					<li>sudo mv my_config_file /etc/nginx/sites-available</li>
+					<li>cd /etc/nginx/sites-available</li>
+					<li>sudo ln -s my_config_file /etc/nginx/sites-enabled</li>
+					<li>sudo systemctl reload nginx</li>
+				</ul>
+				<p>update the google domain with the static public IP
+wait for your site to go live.</p>
+				<p>get HTTPS with <a href="https://certbot.eff.org/lets-encrypt/ubuntufocal-nginx" target="_blank"> certbot.</a>
+
+				</p>
 			</div>
 			
 		</div>
